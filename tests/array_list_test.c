@@ -1047,6 +1047,7 @@ AWS_TEST_CASE(array_list_empty_sort, s_array_list_empty_sort_fn)
 
 static int s_array_list_zeroed_length(struct aws_allocator *allocator, void *ctx) {
     (void)ctx;
+    (void)allocator;
 
     struct aws_array_list list;
     AWS_ZERO_STRUCT(list);
